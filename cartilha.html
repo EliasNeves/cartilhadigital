@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartilha Digital - Doe Vida</title>
+
+  <style>
+    /* ==============================
+       BASE E LAYOUT
+       ============================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #d32f2f; /* vermelho de fundo */
+      overflow-x: hidden;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* A imagem ocupa 100% da largura da janela
+       e mantém proporção (sem margens laterais) */
+    .cartilha-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Scrollbar personalizada (opcional) */
+    body::-webkit-scrollbar {
+      width: 8px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color: rgba(255,255,255,0.5);
+      border-radius: 4px;
+    }
+
+    /* Impressão */
+    @media print {
+      body {
+        background: white;
+      }
+      .cartilha-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- A imagem original da cartilha -->
+  <img src="iPhone 13 & 14 - 1.svg"
+       alt="Cartilha digital Doe Vida"
+       class="cartilha-img">
+
+  <!--
+    📘 Instruções:
+    1️⃣ Coloque este HTML e a imagem "iPhone 13 & 14 - 1.png" na mesma pasta.
+    2️⃣ Abra no navegador: a cartilha ocupará 100% da largura da tela, sem margens.
+    3️⃣ Rolagem vertical automática (ideal para imagens longas).
+    4️⃣ Para gerar PDF:
+        - Ctrl + P → "Salvar como PDF"
+        - Margens: Nenhuma
+        - Plano de fundo: Ativar
+  -->
+</body>
+</html>
